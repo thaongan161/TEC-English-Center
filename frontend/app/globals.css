@@ -1,0 +1,40 @@
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* ===============================
+   THEME VARIABLES
+================================ */
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff; /* gray-800 → rất dễ đọc */
+}
+
+/* Dark mode (không bắt buộc dùng) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+/* ===============================
+   RESET – CHỐNG LỆCH
+================================ */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* CHỐT LỆCH NGANG */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background); /* NỀN TRẮNG */
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;          /* DỄ ĐỌC */
+  -webkit-font-smoothing: antialiased;
+}
